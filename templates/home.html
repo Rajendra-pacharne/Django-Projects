@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+   <form action="add" method="POST">
+    {% csrf_token %}   
+    <input type="text" id="num1" name="num1" placeholder="enter the name"> <br>
+    <input type="text"  id="num2" name="num2" placeholder="enter the name"> <br> <br>
+
+    <input type="text" id="num3" name="num3" placeholder="enter the name"> <br>
+    <input type="text"  id="num4" name="num4" placeholder="enter the name"> <br><br>
+
+    <input type="text" id="num5" name="num5" placeholder="enter the name"> <br>
+    <input type="text"  id="num6" name="num6" placeholder="enter the name"> <br><br>
+
+    <input type="text" id="num7" name="num7" placeholder="enter the name"> <br>
+    <input type="text"  id="num8" name="num8" placeholder="enter the name"> <br><br>
+    <input type="submit">
+    </form>
+{% endblock %}
